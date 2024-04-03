@@ -5116,6 +5116,7 @@ z-index: -1;
 	align-items: center;
 	justify-content: center;
 	left: 0;
+	top: 0;
 	width: 70px;
 	min-height: 8vh;
 	margin-left: -16px;
@@ -5124,7 +5125,7 @@ z-index: -1;
 
 
 #header .sa_texts .satext { 
-	margin-right: 20px;
+	margin-right: 0px;
 }
 
 #header .ourworks{
