@@ -54,8 +54,8 @@
       $('#downloadButton').click(function () {
         // Create a temporary link element
         var link = document.createElement('a');
-        link.href = 'downloads/motioncr.apk'; // 
-        link.download = 'motioncr.apk'; // 
+        link.href = 'downloads/motioncr.apk'; // Specify the file path
+        link.download = 'motioncr.apk'; // Specify the filename
         document.body.appendChild(link);
   
         // Trigger the download
@@ -74,15 +74,20 @@
             clearInterval(interval);
             // Close the modal when download is complete
             $('.modal').modal('hide');
-            // Simulate completion message after a delay ( 2 seconds)
+            // Simulate completion message after a delay (e.g., 2 seconds)
             setTimeout(function() {
               alert('Download completed. You can now install the app.');
+              // Hide the modal after 6 seconds
+              setTimeout(function() {
+                $('.modal').modal('hide');
+              }, 6000);
             }, 2000);
           }
         }, 500);
       });
     });
-  </script>
+</script>
+
   
   
 </body>
